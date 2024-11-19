@@ -22,6 +22,8 @@
   --company-logo-url: url("https://www.cream-collection.de/wp-content/uploads/go-x/u/59b84de7-525d-4992-99ec-ac57b73c25b6/image-640x211.png");
   --company-logo-width: 200px;
   --company-logo-height: 80px;
+  --media-company-logo-width: 200px;
+  --media-company-logo-height: 40px;
   --company-logo-background: var(--secondary-background-color);
   --company-name: "cream collection Stephan Vila";
   --company-street: "Roswithastraße 28";
@@ -57,6 +59,8 @@
   --company-logo-url: url("https://www.adeltafinanz.com/wp-content/uploads/2019/10/adelta-finanz-ag_factoring_abrechnungsservice.svg");
   --company-logo-width: 300px;
   --company-logo-height: 80px;
+  --media-company-logo-width: 300px;
+  --media-company-logo-height: 40px;
   --company-logo-background: var(--secondary-background-color);
   --company-name: "ADELTA.FINANZ AG";
   --company-street: "Marc-Chagall-Straße 2";
@@ -236,7 +240,7 @@ html, body {
 
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 850px) {
 
 
   html, body {
@@ -279,8 +283,8 @@ html, body {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center; 
-    width: var(--company-logo-width); 
-    height: var(--company-logo-height);
+    width: var(--media-company-logo-width); 
+    height: var(--media-company-logo-height);
   }
 
   #section-container {
@@ -344,6 +348,7 @@ html, body {
   flex-direction: column;
   box-sizing: border-box;
   z-index: 2; 
+  position: static;
 }
 
 
@@ -543,7 +548,7 @@ html, body {
 
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 850px) {
 
     #title-container {
         width: 100%;
@@ -1081,7 +1086,7 @@ html, body {
 
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 850px) {
 
 
 html, body {
@@ -1123,8 +1128,8 @@ html, body {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center; 
-  width: var(--company-logo-width); 
-  height: var(--company-logo-height);
+  width: var(--media-company-logo-width); 
+  height: var(--media-company-logo-height);
 }
 
 
@@ -1332,6 +1337,7 @@ html, body {
   flex-direction: column;
   box-sizing: border-box;
   z-index: 2; 
+  position: static;
 }
 
 
@@ -1722,11 +1728,11 @@ html, body {
 .contact-form-name,
 .contact-form-name:valid
 {
-  background-color: var(--company-logo-background);
+  background-color: var(--company-logo-background) !important;
 }
 
 .contact-form-name:focus {
-    background-color: var(--primary-background-company-color);
+    background-color: var(--primary-background-company-color) !important;
 }
 
 
@@ -1773,11 +1779,11 @@ html, body {
 .contact-form-email,
 .contact-form-email:valid
 {
-  background-color: var(--company-logo-background);
+  background-color: var(--company-logo-background) !important;
 }
 
 .contact-form-email:focus {
-    background-color: var(--primary-background-company-color);
+    background-color: var(--primary-background-company-color) !important;
 }
 
 
@@ -1846,22 +1852,22 @@ html, body {
 .contact-form-nachricht,
 .contact-form-nachricht:valid
 {
-  background-color: var(--company-logo-background);
+  background-color: var(--company-logo-background) !important;
 }
 
 .contact-form-nachricht:focus {
-    background-color: var(--primary-background-company-color);
+    background-color: var(--primary-background-company-color) !important;
 }
 
 
 .modalMessage,
 .modalMessage:valid
 {
-  background-color: var(--company-logo-background);
+  background-color: var(--company-logo-background) !important;
 }
 
 .modalMessage:focus {
-    background-color: var(--primary-background-company-color);
+    background-color: var(--primary-background-company-color) !important;
 }
 
 
@@ -1919,7 +1925,7 @@ html, body {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 850px) {
 
 
 html, body {
@@ -1961,8 +1967,8 @@ html, body {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center; 
-  width: var(--company-logo-width); 
-  height: var(--company-logo-height);
+  width: var(--media-company-logo-width); 
+  height: var(--media-company-logo-height);
 }
 
 
@@ -2280,7 +2286,7 @@ padding-left: 0px;
 
 
 
- /* ++++++++++++++++++++++++ ENDE Anwendung Chatbot für Factoring ++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++ ENDE Anwendung Chatbot für Factoring ++++++++++++++++++++++++ */
 
 
 
@@ -2371,7 +2377,7 @@ padding-left: 0px;
 
 
 /* Für kleine Bildschirme (maximale Breite: 576px) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 850px) {
 
     :root {
         --font-size-title: var(--media-font-size-title) !important;
@@ -2403,11 +2409,11 @@ padding-left: 0px;
     
     
     #chatbot-consent-label {
-      font-size: var(--media-font-size-fineprint) !important;
+      font-size: var(--font-size-fineprint) !important;
     }
 
     .special-link-consent {
-      font-size: var(--media-font-size-fineprint) !important;
+      font-size: var(--font-size-fineprint) !important;
     }
 
 
@@ -2776,6 +2782,7 @@ body.modal-open {
   flex-direction: column;
   box-sizing: border-box;
   z-index: 2; 
+  position: relative;
 }
 
 
@@ -3042,7 +3049,7 @@ body.modal-open {
 .special-link-consent {
   color: var(--primary-link-color) !important;
   font-family: var(--company-font-family);
-  font-size: var(--font-size-text) !important;
+  font-size: var(--font-size-fineprint) !important;
   text-decoration: underline; /* Optional, wenn du möchtest, dass Links unterstrichen sind */
 }
 
@@ -3054,7 +3061,7 @@ body.modal-open {
 /* Stil für den Consent-Text */
 #chatbot-consent-label {
   font-family: var(--company-font-family);
-  font-size: var(--font-size-text) !important;
+  font-size: var(--font-size-fineprint) !important;
 }
 
 
@@ -4267,7 +4274,7 @@ textarea:-webkit-autofill {
     <div class="title-content">
 
         <p class="custom0a-p">Hallo, ich bin Chati,</p>
-        <p class="custom0b-p">wenn Sie Fragen zum Thema Forderungsmanagement oder zu meinem Unternehmen haben, dann sind Sie hier genau richtig. Ich weiß aber noch viel mehr. Versuchen Sie es einfach.</p>
+        <p class="custom0b-p">wenn Sie Fragen zum Thema Factoring oder zu meinem Unternehmen haben, dann sind Sie hier genau richtig. Ich weiß aber noch viel mehr. Versuchen Sie es einfach.</p>
         <p class="custom0c-p">Chat Assistant</p>
 
 
@@ -4336,17 +4343,6 @@ textarea:-webkit-autofill {
         </div>
     
       </div>
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -6114,6 +6110,7 @@ function openChatbot() {
 
 
 
+
 // Standardmäßig den Chatbot-Container beim Laden der Seite verstecken,
 // nur wenn der Wert von --rules-context den gewünschten entspricht
 document.addEventListener('DOMContentLoaded', function() {
@@ -6127,6 +6124,9 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('instant-answer-dialog-schliessen-button').style.display = 'none';
     }
 });
+
+
+
 
 
 
