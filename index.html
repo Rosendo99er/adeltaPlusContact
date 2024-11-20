@@ -5488,7 +5488,7 @@ function saveUserMessage(userMessage) {
     conversationHistory.push({ role: 'user', content: userMessage });
     // Überprüfen, ob das Löschen deaktiviert werden soll
     if (!preventUserMessageDeletion) {
-        if (conversationHistory.length > 7) {
+        if (conversationHistory.length > 20) {
             conversationHistory.shift(); // Entferne das älteste Paar
         }
     }
