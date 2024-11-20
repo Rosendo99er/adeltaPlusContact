@@ -6348,7 +6348,7 @@ openChatbot();
     let fullMessage = message;
 
     if (caseNumber) {
-      fullMessage = `Aktennummer: ${caseNumber}<br>\n` + fullMessage;
+      fullMessage = `-> Aktennummer: ${caseNumber}<br>\n` + `-> Ihr Anliegen / Ihre Nachricht: ` + fullMessage;
     }
 
     if (fullMessage.trim()) {
@@ -6406,13 +6406,13 @@ openChatbot();
     let fullMessage = message;
     
     if (caseNumber) {
-      fullMessage = `Rechnungsnummer: ${caseNumber}<br>\n` + `Ihr Anliegen / Ihre Nachricht: ` + fullMessage;
+      fullMessage = `-> Rechnungsnummer: ${caseNumber}<br>\n` + `-> Ihr Anliegen / Ihre Nachricht: ` + fullMessage;
     }
 
     let fullMessagePlus = fullMessage;
 
     if (rechnungsstellerName) {
-      fullMessagePlus = `Rechnungssteller: ${rechnungsstellerName}<br>\n` + fullMessage;
+      fullMessagePlus = `-> Rechnungssteller: ${rechnungsstellerName}<br>\n` + fullMessage;
     }
 
 
